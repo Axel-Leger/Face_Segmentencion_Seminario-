@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Foto sin fondo - Previsualización antes de guardar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenedorDivs">
+      <div class="div-1">
+        <h1>Captura tu Foto sin Fondo</h1>
+        <video
+          id="video"
+          width="640"
+          height="480"
+          autoplay
+          muted
+          playsinline
+        ></video>
+        <canvas id="canvas" width="640" height="480"></canvas>
+
+        <button id="btnCapture">Capturar Foto</button>
+      </div>
+      <div class="div-2">
+        
+        <img
+          id="preview"
+          width="640"
+          height="480"
+          alt="Previsualización de la foto sin fondo"
+        />
+        <button id="btnDownload">Guardar Foto sin Fondo</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/selfie_segmentation.js"></script>
+    <script src="sript.js"></script>
+  </body>
+</html>
