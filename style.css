@@ -30,6 +30,7 @@ video {
   width: 640px;
   height: 480px;
   background: #000;
+    transform: scaleX(-1);
 }
 
 canvas {
